@@ -1,0 +1,71 @@
+body {
+	background-color: grey;
+}
+
+#map {
+	padding-top: 40px;
+	padding-right: 30px;
+}
+
+
+.smallLabel {
+	color: white;
+	margin-top: 15px;
+	margin-left: 40px;
+	margin-bottom: 10px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+    padding: 0;
+    overflow: hidden;
+	background-color: #AC0404;
+}
+
+li {
+    float: left;
+	display: block;
+    color: #F6F1F0;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+li:hover {
+	background-color: #3d3d5c;
+}
+
+.leftContent {
+	float: left;
+}
+
+.rightContent {
+	float: right;
+}
+
+.requestBox {
+	/* open request feed */
+	margin-top: 40px;
+	margin-left: 40px;
+	margin-bottom: 40px;
+	text-align: center;
+	background-color: #F6F1F0;
+	width: 300px;
+	height: 100px;
+}
+
+.requestBoxes {
+	width: 380px;
+	border: groove;
+	float: left;
+	background-color: #3d3d5c;
+	margin-right: 40px;
+	margin-top: 20px;
+}
+
+.button {
+	display: block;
+	padding: 10px;
+	color: #F6F1F0;
+	background-color: #AC0404;
+}

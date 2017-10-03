@@ -1,0 +1,24 @@
+
+#switchContainer{
+  margin: 22% 22%;
+}
+
+#onButton{
+  text-align: center;
+  padding: 200px 150px;
+  font-size: 3em;
+  background-color: #ff0000;
+  border-radius: 50%;
+  display: inline;
+  margin-right: 20px;
+}
+
+#offButton{
+  text-align: center;
+  padding: 200px 150px;
+  font-size: 3em;
+  background-color: #00ff00;
+  border-radius: 50%;
+  display: inline;
+  margin-right: 20px;
+}

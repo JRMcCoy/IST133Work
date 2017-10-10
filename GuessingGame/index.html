@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<head>
+<script src="guess.js"></script>
+<link rel="stylesheet" type="text/css" href="gameStyles.css">
+</head>
+<body>
+<h1>Welcome to the guessing game!</h1>
+<div id="gameBox">
+  <span id="msg">I'm thinking of a number, try to guess what it is!</span>
+  <div>
+  <p style="margin-left: 40px">Your guess:<input id="guessbox" type="text" value="" onKeydown="handleGuess(event);"/></p>
+  </div>
+  <button id="restart" onclick="handleRestart();">PLAY AGAIN</button>
+</div>
+</body>

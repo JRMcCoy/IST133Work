@@ -18,7 +18,6 @@ function handleGuess(e) {
 		gameWon = true;
 		document.getElementById("msg").innerHTML = "Correct! Nice job.";
 		document.getElementById("restart").style.visibility = "visible";
-		// make button visible
 	}
 	else {
 		document.getElementById("msg").innerHTML = "You didn't enter a number.";
@@ -33,6 +32,5 @@ function handleRestart() {
 	document.getElementById("msg").innerHTML = "I'm thinking of a number, try to guess what it is!";
 	document.getElementById("guessbox").value = "";
 	document.getElementById("restart").style.visibility = "hidden";
-	// make this element invisible through css
 	return;
 }

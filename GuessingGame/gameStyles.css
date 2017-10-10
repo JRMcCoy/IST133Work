@@ -1,0 +1,32 @@
+h1 {
+	text-align: center;
+	color: yellow;
+}
+
+body {
+	background-color: black;
+}
+
+#gameBox {
+	display: box;
+	margin-left: 38vw;
+	margin-top: 10vh;
+	color: white;
+}
+
+#guessbox {
+	background-color: yellow;
+	border-color: yellow;
+	margin-left: 10px;
+}
+
+#restart {
+	background-color: yellow;
+	color: black;
+	margin-left: 100px;
+	visibility: hidden;
+}
+
+#restart:hover {
+	background-color: pink;
+}

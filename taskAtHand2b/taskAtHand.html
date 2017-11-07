@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ATask@Hand</title>
+		<link href="taskAtHand.css" rel="StyleSheet" />
+		<link id="theme-style" href="themes/blue.css" rel="StyleSheet" />
+		<script src="lib/jquery-3.2.1.min.js"></script>
+		<script src="taskAtHand.js"></script>
+		<script src="appStorage.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<header>Task@Hand</header>
+			<div id="toolbar">
+			  <label for="theme">Theme</label>
+			  <select id="theme" title="Select theme">
+			    <option value="blue">Blue</option>
+				<option value="green">Green</option>
+				<option value="magenta">Magenta</option>
+				<option value="red">Red</option>
+			  </select>
+			</div>
+			<div id="main">
+				<div id="add-task">
+					<label for="new-task-name">Add a task</label>
+					<input type="text" id="new-task-name" title="Enter a task name" placeholder="Enter a task name"/>
+				</div>
+				<ul id="task-list">
+				</ul>
+			</div>
+			<footer></footer>
+		</div>
+		<div id="templates" class="hidden">
+		  <ul id="task-template">
+		    <li class="task">
+			  <div class="tools">
+			    <button class="delete" title="Delete"></button>
+				<button class="move-up" title="Up"></button>
+				<button class="move-down" title="Down"></button>
+			  </div>
+			  <span class="task-name"></span>
+			  <input type="text" class="task-name hidden"/>
+			</li>
+		  </ul>
+		</div>
+	</body>

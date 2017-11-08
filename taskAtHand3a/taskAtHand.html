@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ATask@Hand</title>
+		<link href="taskAtHand.css" rel="StyleSheet" />
+		<link id="theme-style" href="themes/blue.css" rel="StyleSheet" />
+		<script src="lib/jquery-3.2.1.min.js"></script>
+		<script src="taskAtHand.js"></script>
+		<script src="appStorage.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<header>Task@Hand</header>
+			<div id="toolbar">
+			  <label for="theme">Theme</label>
+			  <select id="theme" title="Select theme">
+			    <option value="blue">Blue</option>
+				<option value="green">Green</option>
+				<option value="magenta">Magenta</option>
+				<option value="red">Red</option>
+			  </select>
+			</div>
+			<div id="main">
+				<div id="add-task">
+					<label for="new-task-name">Add a task</label>
+					<input type="text" id="new-task-name" title="Enter a task name" placeholder="Enter a task name"/>
+				</div>
+				<ul id="task-list">
+				</ul>
+			</div>
+			<footer></footer>
+		</div>
+		<div id="templates" class="hidden">
+		  <ul id="task-template">
+		    <li class="task">
+			  <div class="tools">
+			    <button class="delete" title="Delete">&nbsp;</button>
+				<button class="move-up" title="Up">&nbsp;</button>
+				<button class="move-down" title="Down">&nbsp;</button>
+			  </div>
+			  <button class="toggle-details">&nbsp;</button>
+			  <span class="task-name"></span>
+			  <input type="text" class="task-name hidden"/>
+			  <div class="details">
+			    <label>Start date:</label>
+				<input type="date"/><br/>
+				<label>Due date:</label>
+				<input type="date"><br/>
+				<label>Status:</label>
+				<select>
+				  <option value="0">None</option>
+				  <option value="1">Not Started</option>
+				  <option value="2">Started</option>
+				  <option value="3">Completed</option>
+				</select><br/>
+				<label>Priority:</label>
+				<select>
+				  <option value="0">None</option>
+				  <option value="1">Low</option>
+				  <option value="2">Normal</option>
+				  <option value="3">High</option>
+				</select><br/>
+				<label>%&nbsp;Complete:</label>
+				<input type="number" min="0" max="100" step="10" value="0"/>
+			  </div>
+			</li>
+		  </ul>
+		</div>
+	</body>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>App</title>
+    <link href="css/app.css" rel="StyleSheet" />
+    <script src="lib/jquery-3.2.1.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/WeatherWidget.js"></script>
+</head>
+<body>
+
+    <div id="app">
+
+        <header>App</header>
+
+        <div id="weather-widget">
+            <div class="loading">
+                <p>Checking the weather...</p>
+                <img src="images/loading.gif" alt="Loading..." />
+            </div>
+            <div class="results">
+                <header>
+                    <img src="" alt="Condition" />
+                    Current weather for
+                    <div class="location"><span></span></div>
+                </header>
+                <section class="conditions">
+                    Conditions: <span data-field="weather"></span><br />
+                    Temperature: <span data-field="temperature_string"></span><br />
+                    Feels Like: <span data-field="feelslike_string"></span><br />
+                    Humidity: <span data-field="relative_humidity"></span><br />
+                    Wind: <span data-field="wind_string"></span><br />
+                </section>
+            </div>
+            <div class="error">
+                Error: <span></span>
+            </div>
+        </div>
+
+        <div id="main">
+            <div id="controls">
+                <button id="getWeather">Get Weather</button>
+            </div>
+        </div>
+
+        <footer></footer>
+
+    </div>
+</body>
+</html>

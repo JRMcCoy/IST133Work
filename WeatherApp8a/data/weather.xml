@@ -1,0 +1,11 @@
+<weather>
+    <location>Your City</location>
+    <current_observation>
+        <weather>Snow</weather>
+        <temperature_string>38.3 F (3.5 C)</temperature_string>
+        <feelslike_string>38 F (3 C)</feelslike_string>
+        <relative_humidity>76%</relative_humidity>
+        <wind_string>From the WSW at 1.0 MPH Gusting to 5.0 MPH</wind_string>
+        <icon_url>images/snow.gif</icon_url>
+    </current_observation>
+</weather>

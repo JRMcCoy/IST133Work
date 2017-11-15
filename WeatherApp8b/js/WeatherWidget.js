@@ -16,7 +16,6 @@
 
     function populateWeather(data) {
 
-        //data = JSON.parse(data);
         var observation = data.current_observation;
 
         $(".results header img", $widget).attr("src", observation.icon_url);

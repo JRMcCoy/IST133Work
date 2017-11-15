@@ -14,7 +14,7 @@ function MyApp() {
         widgetReference = $(WeatherWidget);
         widgetObject = new WeatherWidget(widgetReference);
 
-        widgetReference.click(function () {
+        $("#getWeather").click(function () {
             widgetObject.update();
         });
 

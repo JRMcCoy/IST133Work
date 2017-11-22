@@ -1,0 +1,41 @@
+body {
+	background-color: grey;
+}
+
+#gameArea {
+	display:block;
+    margin: 0 auto;
+	background-color: green;
+	height: 45vh;
+	width: 50vw;
+	border: solid;
+}
+
+header {
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+	text-align: center;
+}
+
+p {
+	font-size: 2em;
+}
+
+#showCardButton {
+	display:block;
+    margin:auto;
+	width: 10vw;
+	height: 5vh;
+	font-size: 1.1em;
+}
+
+#cardImage {
+	padding-top: 5vh;
+	display:block;
+    margin:auto;
+}
+
+footer {
+	font-size: 8;
+	margin-top: 20vh;
+}

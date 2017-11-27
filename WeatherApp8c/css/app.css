@@ -1,0 +1,110 @@
+﻿body
+{
+    font: 1em Verdana, Geneva, sans-serif;
+    color: WhiteSmoke;
+    padding: 0;
+    margin: 5px;
+    background-color: #001;
+}
+div
+{
+    padding: 0;
+    margin: 0;
+}
+button
+{
+    cursor: pointer;
+}
+.hide
+{
+    display: none;
+}
+
+
+/****************************************************************************/
+/* App */
+/****************************************************************************/
+ #app
+{
+    width: 100%;
+    position: relative;
+    margin: 4px;
+}
+
+#app>header
+{
+    margin: 0;
+    padding: 0 8px;
+    font-size: 1.5em;
+    background-color: #445;
+}
+
+#main
+{
+    position: relative;
+    padding: 6px;
+    margin-bottom: 4px;
+    background-color: #222;
+    background: -webkit-linear-gradient(top, #445, #223);
+    background: -moz-linear-gradient(top, #445, #223);
+    background: -ms-linear-gradient(top, #445, #223);
+    background: linear-gradient(top, #445, #223);
+}
+
+#weather-widget
+{
+    /* display: none; */
+    margin: .5em;
+    padding: .5em;
+    width: 20em;
+    border-radius: 8px;
+    border: 1px solid green;
+    background-color: WhiteSmoke;
+    color: black;
+}
+
+#weather-widget .results,
+#weather-widget .loading
+{
+    display: none;
+}
+#weather-widget .loading
+{
+    text-align: center;
+}
+#weather-widget .results img
+{
+    vertical-align: middle;
+}
+#weather-widget .results header
+{
+    font-weight: bold;
+    font-size: 1em;
+}
+#weather-widget .results header .location
+{
+    text-align: center;
+    font-size: 1.2em;
+}
+#weather-widget .results section
+{
+    margin-top: 1em;
+}
+
+.error
+{
+    display: none;
+    color: red;
+}
+
+#app button
+{
+    border: 1px solid WhiteSmoke;
+    border-radius: 4px;
+    padding: .5em 1em;
+    width: 7em;
+    color: WhiteSmoke;
+    background-color: #001;
+    font: inherit;
+}
+

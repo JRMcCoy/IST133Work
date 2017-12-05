@@ -1,0 +1,101 @@
+body {
+	background-color: grey;
+}
+
+.hidden {
+	display: none;
+}
+
+#gameArea {
+	float: left;
+	background-color: green;
+	height: 80vh;
+	width: 60vw;
+	border: solid;
+	font-size: 1.1em;
+	margin-bottom: 2vh;
+	margin-top: 2vh;
+	margin: 2vh;
+}
+
+#playerCountInput {
+	margin-right: 1vw;
+}
+
+#StartingWealth {
+	display: inline;
+}	
+
+#startButton {
+	width: 10vw;
+	height: 5vh;
+	font-size: 1.1em;
+	margin-top: 2vh;
+	margin-right: 1vw;
+	margin-left: 1vw;
+}
+
+footer {
+	font-size: 8;
+	margin-top: 3vh;
+}
+
+#hand {
+	margin: 2vh;
+	float: right;
+	width: 30vw;
+	height: 32vh;
+	border: solid;
+	background-color: green;
+}
+
+#controlPanel {
+	background-color: white;
+	border: solid;
+	width: 30vw;
+	height: 40vh;
+	float: right;
+	clear: right;
+	margin-top: 5vh;
+	margin-right: 3vw;
+	font-size: 2.5em;
+}
+
+#betInput {
+	height: 2em;
+	font-size: 0.5em;
+}
+
+#displayPanel {
+	background-color: green;
+	border: solid;
+	width: 30vw;
+	height: 60vh;
+	float: right;
+	margin-right: 3vw;
+	font-size: 2.5em;
+}
+
+#potDisplay {
+	margin-top: 5vh;
+	font-size: 1.5em;
+	float: right;
+	margin-right: 10vw;
+	border: solid;
+	width: 20vw;
+	text-align: center;
+}
+
+#cards {
+	height: 35vh;
+}
+.userControls {
+	margin-left: 2em;
+	margin-top: 1em;
+	font-size: 1em;
+}
+
+.controlButton {
+	width: 7vw;
+	height: 5vh;
+}

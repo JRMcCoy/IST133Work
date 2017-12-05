@@ -230,6 +230,29 @@ function PlayGame() {
 		return;
 	}
 	
+	if (Game != null) {
+		// clean up from last time;
+		$("#pubCard1").attr("src", "");
+		$("#pubCard2").slideUp();
+		$("#pubCard2").attr("src", "");
+		$("#pubCard3").slideUp();
+		$("#pubCard3").attr("src", "");
+		$("#pubCard4").slideUp();
+		$("#pubCard4").attr("src", "");
+		$("#pubCard5").slideUp();
+		$("#pubCard5").attr("src", "");
+		$("#controlPanel").slideUp();
+		$("#hand").slideUp();
+	
+		$("#displayPanel").slideUp();
+	
+		var gameLabels = $("#potDisplay").find("p");
+		for (var i = 0; i < 4; i++) {
+			($(gameLabels[i])).text("Player " + (i + 1) + ": 0");
+		}
+		$("#pot").text("Pot: 0");
+	}
+	
 	$("#gameControls").addClass("hidden");
 	var gameLabels = $("#potDisplay").find("p");
 	for (i = 0; i < 4; i++) {

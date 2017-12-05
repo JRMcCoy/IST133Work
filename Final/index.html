@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Poker</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/CardFunctions.js"></script>
+    <script src="js/AppFunctions.js"></script>
+    <script src="js/GameData.js"></script>
+    <script src="js/GameFunctions.js"></script>
+</head>
+<body>
+	<header>
+	<div id="gameControls">
+	  <button id="startButton">New Game</button>
+	  <label for="playerCountInput">Human Players</label>
+	  <input id="playerCountInput" type="text" value="1">
+	  <label for="startingWealth">Starting Wealth</label>
+	  <input id="startingWealth" type="text" value="100">
+	</div>
+	</header>
+	<div id="gameArea">
+	  <div id="cards">
+	    <img id="pubCard1" class="hidden" src=""></img>
+	    <img id="pubCard2" class="hidden" src=""></img>
+	    <img id="pubCard3" class="hidden" src=""></img>
+	    <img id="pubCard4" class="hidden" src=""></img>
+	    <img id="pubCard5" class="hidden" src=""></img>
+	  </div>
+	  <div class="hidden" id="potDisplay">
+		<p id="p1Wealth">Player 1: 0</p>
+	    <p id="p2Wealth">Player 2: 0</p>
+	    <p id="p3Wealth">Player 3: 0</p>
+	    <p id="p4Wealth">Player 4: 0</p>
+	    <p id="pot">Pot: 0</p>
+	  </div>
+	</div>
+	<div id="hand" class="hidden">
+	  <img id="card1" src=""></img>
+	  <img id="card2" src=""></img>
+	</div>
+	<div id="controlPanel" class="hidden">
+	  <p id="highestBetDisplay" class="userControls"></p>
+	  <p id="wealthDisplay" class="userControls"></p>
+	  <label class="userControls" for='betInput'>Your Bet:</label>
+	  <input id='betInput' type='text' value=""><br>
+	  <button id="btnSubmitBet" class="controlButton userControls">Call</button>
+	  <button id="btnFold" class="controlButton userControls">Fold</button>
+	</div>
+	<div id="displayPanel" class="hidden">
+	  <p id="handDisplayTitle"></p>
+	  <img id="displayCardOne" src=""></img>
+	  <img id="displayCardTwo" src=""></img>
+	  <p id="handDescription"></p>
+	</div>
+</body>
+</html>
